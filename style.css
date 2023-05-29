@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #8CC461;
+    font-family: monospace;
+}
+
+.main {
+    FONT-WEIGHT: 100;
+    display: flex;
+    margin: 2rem 1rem;
+    justify-content: center;
+}
+
+.name {
+    width: 50%;
+    padding: 1rem;
+    line-height: 2rem;
+    font-weight: 900;
+    color: white;
+    font-size: 40px;
+
+}
+
+.score {
+    WIDTH: 80vh;
+    border: 1px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: right;
+}
+
+.scoreBoard {
+    position: relative;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    margin: 1rem;
+    width: 6rem;
+    text-align: center;
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 600;
+}
+
+.scoreBoard .score1 {
+    font-size: 68px;
+    margin: 0.4rem;
+}
+
+/* .bottom {
+    display: flex;
+    justify-content: right;
+    margin: 1rem;
+} */
+
+.bottom {
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: right; */
+    margin: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+
+}
+
+.btns {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+/* .computerScore{
+    position: relative;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    margin: 1rem;
+    width: 6rem;
+    text-align: center;
+} */
+.userbtns {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.inputBtn input {
+    /* margin-block: 0 40px;
+    padding: 10px;
+    font-size: 20px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background: rgba;
+    background: rgba(182, 172, 196, 0.53);
+    text-align: right;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: 700;
+    color: #9C60FF; */
+}
+
+.inputBtn {
+    margin: 3rem;
+}
+
+.inputBtn button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.inputBtn input:focus {
+    outline: none;
+}
+
+.inputBtn img {
+    position: relative;
+    /* top: 15px;
+    left: 15px; */
+}
+
+.container {
+    margin-block: 5rem;
+}
+
+.greet {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+
+.stars {}
+
+.trophy {
+    position: absolute;
+    margin-top: 6rem;
+}
+
+.greetText {
+    /* display: flex;     */
+    /* justify-content: center;   */
+    text-align: center;
+}
+
+.hurray {
+    font-size: 91px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.text1 {
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.playAgainBtn {
+    width: 174px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    border: none;
+    margin-top: 3rem;
+}
+
+.rulesModal {
+    position: absolute;
+    bottom: 6rem;
+    right: 3rem;
+    background: #004429;
+    border: 7px solid #FFFFFF;
+    border-radius: 13px;
+    padding: 1rem;
+    padding-left: 2rem;
+    width: 12rem;
+    color: white;
+    display: none;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+}
+
+
+.closeBtn {
+    position: relative;
+    top: -2rem;
+    right: -12rem;
+    background: red;
+    width: 2rem;
+    height: 2rem;
+    border: 7px solid white;
+    border-radius: 54px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.rulesheading {
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: -3rem;
+}
+
+
+.winner {
+    background: radial-gradient(#2d7500d6 49%, #2ab438ba 60%, #2e9a255c 60%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBtn p {
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.rematch {
+    width: 20%;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.rematch p {
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 46px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.rematch .sub {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.rematch button {
+    background: #FFFFFF;
+    border-radius: 9px;
+    width: 8rem;
+    padding: 0.7rem;
+    margin: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+#displayWinner {
+    display: none;
+}
+
+@media screen and (max-width : 768px) {
+    .inputBtn {
+        margin: 1rem;
+    }
+    .inputBtn img {
+        height: 7rem;
+    }
+    .userbtns {
+        justify-content: space-between;
+    }
+
+}

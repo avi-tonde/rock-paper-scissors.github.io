@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors- Micro Project 4</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="score">
+            <div class="name">
+                <h5>ROCK</h5>
+                <h5>PAPER</h5>
+                <h5>SCISSORS</h5>
+            </div>
+
+            <div class="scoreBoard">
+                <p>COMPUTER SCORE</p><br>
+                <p class="score1" id="computerScore">0</p>
+
+            </div>
+            <div class="scoreBoard">
+                <p>YOUR SCORE</p><br>
+                <p class="score1" id="yourScore">0</p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="userbtns" id="userbtns">
+        <div class="inputBtn">
+            <button class="userChoice" data-selection="rock"><img src="images/rock1.svg" alt="" srcset=""></button>
+
+        </div>
+        <div class="inputBtn">
+            <button class="userChoice" data-selection="paper"><img src="images/paper1.svg" alt="" srcset=""></button>
+        </div>
+        <div class="inputBtn">
+            <button class="userChoice" data-selection="scissor"><img src="images/scissor1.svg" alt=""
+                    srcset=""></button>
+        </div>
+    </div>
+
+
+    <div class="userbtns" id="displayWinner">
+        <div class="" id="userWinner">
+            <div class="inputBtn">
+                <p>YOU PICKED</p>
+                <button><img src="" alt="" srcset="" id="userChoiceImg"></button>    
+            </div>
+        </div>
+
+        <div class="rematch">
+            <!-- <button onclick="alert('paper1!')" ><img src="images/paper1.svg" alt="" srcset=""></button> -->
+            <p id="res">YOU WIN</p> 
+            <p class="sub">AGAINST PC</p>        
+            <button onclick="playAgain()">PLAY AGAIN</button>
+        </div>
+        
+        <div class="" id="computerWinner">
+            <div class="inputBtn">
+                <P>PC PICKED</P>
+                <button><img src="" alt="" id="computerChoiceImg"></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="rulesModal" class="rulesModal">
+        <div id="closeBtn" class="closeBtn">X</div>
+        <p class="rulesheading">Game rules</p>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                scissors.</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+
+    </div>
+    <div class="bottom">
+        <button id="rulesModalBtn" class="btns" onclick="openModal()">RULES</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
